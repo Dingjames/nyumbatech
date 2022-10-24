@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <p>Enter a password: <input id="passBox" type="password"/>
+          
+        </p>
+        <a href="https://dingjames.github.io/NYUMBATECH-/"
+        <button onclick="return check();">Click</button></a>
+    </body>
+</html>
+
+
+<script>
+function check() {
+    var password = document.getElementById("passBox");
+    var passText = password.value;
+    if(passText == "TECH") {
+        alert("Welcome");
+        return true;
+    }
+    else {
+        alert("Action not allowed");
+        return false;
+    }
+}
+</script>
